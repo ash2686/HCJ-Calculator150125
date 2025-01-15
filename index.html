@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+                <div class="main-area">
+                    <table>
+                        <caption>Simple Calculator using HTML/CSS/JavaScript</caption>
+                        <tr><th colspan="5" id="result">Result
+                            <!-- <div class="show">Operand</div> -->
+                        </th></tr>
+                        <tr>
+                            <td value = "1" class="key key-one" onClick="fillIn('1')" >1</td>
+                            <td value = "2" class="key key-two" onClick="fillIn('2')"  >2</td>
+                            <td value = "3" class="key key-three" onClick="fillIn('3')" >3</td>
+                            <td value = "+" class="key key-add" onClick="fillIn('+')" >+</td>
+                            <td value = "-" class="key key-sub" onClick="fillIn('-')" >-</td>
+                        </tr>
+
+                        <tr>
+                            <td value = "4" class="key key-four" onClick="fillIn('4')"  >4</td>
+                            <td value = "5" class="key key-five" onClick="fillIn('5')" >5</td>
+                            <td value = "6" class="key key-six" onClick="fillIn('6')" >6</td>
+                            <td value = "*" class="key key-multiply" onClick="fillIn('*')" >x</td>
+                            <td value = "/" class="key key-divide" onClick="fillIn('/')" >/</td>
+                        </tr>
+
+                        <tr>
+                            <td value = "7" class="key key-seven" onClick ="fillIn('7')" >7</td>
+                            <td value = "8" class="key key-eight" onClick ="fillIn('8')" >8</td>
+                            <td value = "9" class="key key-nine" onClick ="fillIn('9')" >9</td>
+                            <td class="key key-result" colspan="2" rowspan="2" id ="equals" onClick="outputResult()">=</td>
+                           
+                        </tr>
+
+                        <tr>
+                            <td class="key key-clear" onClick ="clearResult()">C</td>
+                            <td value = "0" class="key key-zero" onClick ="fillIn('0')" >0</td>
+                            <td value = "." class="key key-dot" onClick ="fillIn('.')" >.</td>
+                           
+                        </tr>
+                         
+                    </table>
+                </div>
+
+                <script src="script.js"></script>
+</body>
+</html>
